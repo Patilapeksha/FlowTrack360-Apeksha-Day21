@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(135deg, #e8f0ff, #f5f9ff);
+}
+
+.dashboard {
+  height: 100vh;
+  padding: 15px 20px;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.header button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #2563eb;
+  font-size: 22px;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.toolbar {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.toolbar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  outline: none;
+}
+
+.toolbar button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.employee-card {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.employee-card h3 {
+  color: #1e293b;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.employee-card p,
+.employee-card span {
+  color: #64748b;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+
+.buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.buttons button {
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background: #3b82f6;
+}
+
+.buttons button:nth-child(2) {
+  background: #ef4444;
+}
+
+.buttons button:nth-child(3) {
+  background: #22c55e;
+}
+
+.buttons button:nth-child(4) {
+  background: #f59e0b;
+}
+
+.buttons button:nth-child(5) {
+  background: #10b981;
+}
+
+.buttons button:nth-child(6) {
+  background: #dc2626;
+}
+
+
+
+
+  

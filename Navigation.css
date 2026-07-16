@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef4ff, #dbeafe);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.dashboard {
+  width: 95%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.header p {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.logout-btn {
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+
+
+.welcome-card {
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-card h2 {
+  font-size: 20px;
+}
+
+.welcome-card p {
+  font-size: 13px;
+}
+
+.role-badge {
+  background: white;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+
+.select-box {
+  margin-top: 15px;
+}
+
+.select-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.select-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  color: #2563eb;
+  font-size: 22px;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+
+.menu-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.menu-card {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #dbeafe;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu-card:hover,
+.active {
+  background: #2563eb;
+  color: white;
+}
+
+.page-content {
+  margin-top: 15px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.page-content h2 {
+  color: #2563eb;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.page-content p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+

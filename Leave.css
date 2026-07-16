@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f5fa;
+  overflow: hidden;
+}
+
+.leave-container {
+  height: 100vh;
+  padding: 12px 18px;
+  overflow: hidden;
+}
+
+/* Header */
+
+h1 {
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.date {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+/* Statistics */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.stat-card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  border-left: 4px solid;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h2 {
+  font-size: 18px;
+}
+
+.stat-card p {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.purple {
+  border-color: #8b5cf6;
+}
+
+.green {
+  border-color: #22c55e;
+}
+
+.red {
+  border-color: #ef4444;
+}
+
+.yellow {
+  border-color: #f59e0b;
+}
+
+/* Grid */
+
+.leave-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Cards */
+
+.leave-card {
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+  border-radius: 14px;
+  padding: 12px;
+  min-height: 200px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leave-card::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #dbeafe;
+}
+
+.leave-card::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eff6ff;
+}
+
+/* Top Section */
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top h3 {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.top p {
+  font-size: 10px;
+  color: #64748b;
+}
+
+/* Leave Details */
+
+.leave-card h4 {
+  font-size: 13px;
+  color: #0f172a;
+  margin-top: 8px;
+  z-index: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #475569;
+  margin-top: 8px;
+  z-index: 1;
+}
+
+.leave-date {
+  font-size: 10px;
+  color: #64748b;
+  margin-top: 6px;
+  z-index: 1;
+}
+
+/* Status */
+
+.status {
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 8px;
+  z-index: 1;
+}
+
+.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.buttons button {
+  flex: 1;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.deny-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.approve-btn {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.detail-btn {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
